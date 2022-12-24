@@ -5,8 +5,8 @@ public class Noodle extends Food{
 	private String topping;
 	private int spicyLevel;
 	
-	public Noodle(String size, int price, String noodleType, String topping, int spicyLevel) {
-		super(size, price);
+	public Noodle(String size, String foodType, int price, String noodleType, String topping, int spicyLevel) {
+		super(size, foodType, price);
 		this.noodleType = noodleType;
 		this.topping = topping;
 		this.spicyLevel= spicyLevel;
