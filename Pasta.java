@@ -4,8 +4,8 @@ public class Pasta extends Food{
 	private String pastaType;
 	private String cheese;
 	
-	public Pasta(String size, int price, String pastaType, String cheese) {
-		super(size, price);
+	public Pasta(String size, String foodType, int price, String pastaType, String cheese) {
+		super(size, foodType, price);
 		this.cheese = cheese;
 		this.pastaType = pastaType;
 	}
@@ -32,7 +32,4 @@ public class Pasta extends Food{
 		int totalPrice = (int) (this.getPrice()*1.1);
 		return totalPrice;
 	}
-
-	
-
 }
